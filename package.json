@@ -21,5 +21,9 @@
       "scopeName": "source.tl",
       "path": "./syntaxes/tl.tmLanguage"
     }]
-  }
+  },
+  "repository": {
+    "url": "https://github.com/DedAzaMarks/TLVSCode.git"
+  },
+  "publisher": "DedAzaMarks"
 }
