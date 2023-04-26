@@ -2,7 +2,7 @@
   "name": "tl",
   "displayName": "TL",
   "description": "Syntax highlight for Type Language",
-  "version": "0.0.1a",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.75.0"
   },
