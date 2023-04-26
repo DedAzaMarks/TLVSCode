@@ -58,7 +58,7 @@
 							<key>match</key>
 							<string>(?&lt;==\s)(?:[a-z]\w*\.)?[A-Z]\w*</string>
 							<key>name</key>
-							<string>entity.name.function.tl</string>
+							<string>entity.name.type.tl</string>
 						</dict>
 						<dict>
 							<key>match</key>
@@ -139,13 +139,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;=\()([%]??:[a-z]\w*\.)?[A-Z]\w*</string>
+					<string>(?&lt;=\()[%]?(?:[a-z]\w*\.)?\w+</string>
 					<key>name</key>
 					<string>keyword.control.tl</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[a-zA-Z]\w*</string>
+					<string>\w+</string>
 					<key>name</key>
 					<string>storage.type.tl</string>
 				</dict>
@@ -154,6 +154,12 @@
 					<string>\d+</string>
 					<key>name</key>
 					<string>constant.numeric.tl</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>[%]</string>
+					<key>name</key>
+					<string>markup.bold</string>
 				</dict>
 			</array>
 		</dict>
@@ -165,7 +171,7 @@
 					<key>match</key>
 					<string>[@]\b(?:read(?:write)?|write|any|kphp|internal)\b</string>
 					<key>name</key>
-					<string>constant.language.tl</string>
+					<string>constant.character.tl</string>
 				</dict>
 			</array>
 		</dict>
@@ -187,9 +193,9 @@
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>[a-zA-Z][a-zA-Z_]*</string>
+							<string>[a-zA-Z]+</string>
 							<key>name</key>
-							<string>constant.other.tl</string>
+							<string>constant.character.tl</string>
 						</dict>
 					</array>
 				</dict>
