@@ -145,6 +145,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>[%]?(?:[a-z]\w*\.)?\w+(?=&lt;)</string>
+					<key>name</key>
+					<string>keyword.control.tl</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\w+</string>
 					<key>name</key>
 					<string>storage.type.tl</string>
